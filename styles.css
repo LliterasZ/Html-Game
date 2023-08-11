@@ -1,0 +1,109 @@
+body{
+  background-color: rgb(160, 160, 160);
+}
+
+.game-board{
+ display: grid;
+ grid-template-columns: 20px 120px 120px 120px 120px 120px 20px;
+ grid-template-rows: 20px 120px 120px 120px 120px 120px 20px;
+ justify-content: center;
+ position: relative;
+ margin-top: 25px;
+}
+
+.wall{
+  position: relative;
+  background-color:black;
+}
+
+.box {
+ position: relative;
+ background-color: #d9d9d9;
+ border: 2px solid black;
+}
+
+.p1turn{
+  position: absolute;
+  top: 35px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+.p2turn{
+  position: absolute;
+  top: 35px;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+#textBox{
+  position: relative;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+.Safe{
+  border: 2px solid black;
+  text-align: center;
+}
+
+.Risk{
+  border: 2px solid black;
+  text-align: center;
+}
+
+.turn {
+  position: relative;
+  border: 2px solid black;
+}
+
+.player1 {
+  position: absolute;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+}
+
+.player2 {
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    left: 80px;
+    height: 30px;
+    width: 30px;
+}
+
+.dice{
+  position: relative;
+  z-index: 0;
+  height: 120px;
+  width: 120px;
+  background-color:#d9d9d9;
+}
+
+.spaces {
+  position: relative;
+  z-index: 0;
+  height: 115px;
+  width: 115px;
+}
+
+.StatContainer{
+  background-color: #d9d9d9;
+  border: 2px solid black;
+}
+
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 3px;
+    background-color: Black;
+    color: white;
+}
